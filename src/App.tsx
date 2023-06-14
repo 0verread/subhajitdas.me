@@ -1,8 +1,15 @@
 import React from "react";
 
+import Header from "./components/Header";
 
-const App = () => {
-  return <div>Webpack is cool!</div>;
+import './index.css' 
+
+const App:React.FC = () => {
+  return (
+    <>
+      <Header />
+    </>
+  )
 };
  
 export default App;
