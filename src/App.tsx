@@ -7,7 +7,9 @@ import './index.css'
 const App:React.FC = () => {
   return (
     <>
-      <Header />
+      <section className="section flex items-center justify-center h-screen md:flex md:justify-center overflow-y-hidden">
+        <Header />
+      </section>
     </>
   )
 };
