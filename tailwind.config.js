@@ -3,7 +3,6 @@ module.exports = {
   content: [
     './src/**/*.tsx',
   ],
-  darkMode: false,
   theme: {
     extend: {},
   },
