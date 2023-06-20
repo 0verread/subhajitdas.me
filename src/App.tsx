@@ -7,7 +7,9 @@ import './index.css'
 const App:React.FC = () => {
   return (
     <>
+    <div className="mx-auto max-w-3xl">
       <Header />
+    </div>
     </>
   )
 };
