@@ -7,7 +7,7 @@ module.exports = {
   entry: "./src/index.tsx",
   output: {
     filename: "main.js",
-    path: path.resolve(__dirname, "build"),
+    path: path.resolve(__dirname, "dist"),
   },
   module: {
     rules: [
@@ -40,7 +40,7 @@ module.exports = {
   ],
   devServer: {
     static: {
-      directory: path.join(__dirname, "build"),
+      directory: path.join(__dirname, "dist"),
     },
     port: 3000,
   },
