@@ -8,6 +8,8 @@ module.exports = {
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
+    // issue: https://ui.dev/react-router-cannot-get-url-refresh
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -43,5 +45,7 @@ module.exports = {
       directory: path.join(__dirname, "dist"),
     },
     port: 3000,
+    // issue: https://ui.dev/react-router-cannot-get-url-refresh
+    historyApiFallback: true,
   },
 };
