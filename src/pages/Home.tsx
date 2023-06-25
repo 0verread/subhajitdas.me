@@ -9,14 +9,17 @@ import Content from '../components/Content';
 
 const Home:React.FC = () => {
   const [homeContent, setHomeContent] = useState("")
-  useEffect(() => {
-    fetch(aboutMe).then(res => res.text()).then((text) => setHomeContent(text))
-    console.log(homeContent)
-  })
+  // useEffect(() => {
+  //   fetch(aboutMe).then((res) => res.text())
+  //   .then((text) => setHomeContent(text));
+  // })
+
+  console.log(aboutMe)
+
 
   return (
     <div className='p-2'>
-      <ReactMarkdown children={homeContent} />``
+      <ReactMarkdown children={aboutMe} />
     </div>
   )
 }

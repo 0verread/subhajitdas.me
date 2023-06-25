@@ -1,1 +1,1 @@
-Hi! I'm Subhajit but people call me Jeet. I'm a graduate student at Boston University, studying CS + ML.
+Hi! I'm *Subhajit* but people call me Jeet. I'm a **graduate** student at Boston University, studying CS + ML.
