@@ -25,6 +25,10 @@ module.exports = {
         use: ['ts-loader']
       },
       {
+        test: /\.md$/,
+        use: 'raw-loader'
+      },
+      {
         test: /\.css$/i,
         include: path.resolve(__dirname, 'src'),
         use: ['style-loader', 'css-loader', 'postcss-loader'],
