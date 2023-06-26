@@ -1,0 +1,18 @@
+{
+  "name": "writing",
+  "description": "all my writings",
+  "blogs": [
+    {
+      "no": 1,
+      "name": "My first blog",
+      "filePath": "../contents/blogs/my_first_blog.md",
+      "date": "Jun 23, 2023"
+    },
+    {
+      "no": 1,
+      "name": "My first blog",
+      "filePath": "../contents/blogs/my_first_blog.md",
+      "date": "Jun 23, 2023"
+    }
+  ]
+}
