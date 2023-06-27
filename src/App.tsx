@@ -1,12 +1,12 @@
 import React from "react";
 import {Route, Routes} from 'react-router-dom';
 
-import Header from "./components/Header";
+import Header from "@components/Header";
 
-import Blogs  from "./pages/Blogs";
-import Projects from "./pages/Projects";
-import Books from "./pages/Books";
-import Home from "./pages/Home";
+import Blogs  from "@pages/Blogs";
+import Projects from "@pages/Projects";
+import Books from "@pages/Books";
+import Home from "@pages/Home";
 
 import './index.css' 
 
