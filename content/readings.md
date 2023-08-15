@@ -1,4 +1,4 @@
 ---
-title: "bookshelf"
+title: "Readings"
 type: "page"
 ---

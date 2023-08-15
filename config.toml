@@ -65,8 +65,8 @@ url = "/projects"
 weight = 2
 
 [[menu.main]]
-name = "Bookshelf"
-url = "/books"
+name = "Readings"
+url = "/readings"
 weight = 3
 
 # Social media links which shows up on site header.
