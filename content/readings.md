@@ -32,3 +32,9 @@ type: "page"
 - **The Subtle Art of Not Giving a F*ck** by *Mark Manson*
 
 - **Six easy pieces** by *Richard Feynman*
+
+- **The winner stands alone** by *Paulo Coelho*
+
+- **Zero to One** by *Blake Masters and Peter Thiel*
+
+- **A Brief History of Time** by *Stephen Hawking*
