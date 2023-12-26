@@ -128,7 +128,7 @@ import {
 } from "@remix-run/react";
 
 // app/style.css
-var style_default = "/build/_assets/style-DXGK6PIN.css";
+var style_default = "/build/_assets/style-4RUXR3IT.css";
 
 // app/root.tsx
 import { jsxDEV as jsxDEV2 } from "react/jsx-dev-runtime";
@@ -196,27 +196,123 @@ function App() {
   }, this);
 }
 
+// app/routes/projects.tsx
+var projects_exports = {};
+__export(projects_exports, {
+  default: () => Projects
+});
+
+// app/components/Header.tsx
+import { jsxDEV as jsxDEV3 } from "react/jsx-dev-runtime";
+var Header = () => /* @__PURE__ */ jsxDEV3("div", { className: "", children: /* @__PURE__ */ jsxDEV3("nav", { className: "relative flex flex-row justify-items-start space-x-4 items-start px-0 pb-0 mb-10 antialiased", children: [
+  /* @__PURE__ */ jsxDEV3("a", { className: "flex text-white", href: "/", children: "home" }, void 0, !1, {
+    fileName: "app/components/Header.tsx",
+    lineNumber: 5,
+    columnNumber: 9
+  }, this),
+  /* @__PURE__ */ jsxDEV3("a", { className: "flex text-white", href: "/projects", children: "projects" }, void 0, !1, {
+    fileName: "app/components/Header.tsx",
+    lineNumber: 6,
+    columnNumber: 9
+  }, this),
+  /* @__PURE__ */ jsxDEV3("a", { className: "flex text-white", href: "/blogs", children: "blogs" }, void 0, !1, {
+    fileName: "app/components/Header.tsx",
+    lineNumber: 7,
+    columnNumber: 9
+  }, this)
+] }, void 0, !0, {
+  fileName: "app/components/Header.tsx",
+  lineNumber: 4,
+  columnNumber: 7
+}, this) }, void 0, !1, {
+  fileName: "app/components/Header.tsx",
+  lineNumber: 3,
+  columnNumber: 5
+}, this), Header_default = Header;
+
+// app/routes/projects.tsx
+import { jsxDEV as jsxDEV4 } from "react/jsx-dev-runtime";
+function Projects() {
+  return /* @__PURE__ */ jsxDEV4("div", { className: "mx-4 flex lg:mx-auto max-w-2xl mt-8 flex-col", children: [
+    /* @__PURE__ */ jsxDEV4(Header_default, {}, void 0, !1, {
+      fileName: "app/routes/projects.tsx",
+      lineNumber: 6,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV4("div", { className: "text-white", children: " Working on it" }, void 0, !1, {
+      fileName: "app/routes/projects.tsx",
+      lineNumber: 7,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/projects.tsx",
+    lineNumber: 5,
+    columnNumber: 5
+  }, this);
+}
+
 // app/routes/_index.tsx
 var index_exports = {};
 __export(index_exports, {
   default: () => Index,
   meta: () => meta
 });
-import { jsxDEV as jsxDEV3 } from "react/jsx-dev-runtime";
+import { jsxDEV as jsxDEV5 } from "react/jsx-dev-runtime";
 var meta = () => [
-  { title: "New Remix App" },
-  { name: "description", content: "Welcome to Remix!" }
+  { title: "Subhajit" },
+  { name: "description", content: "My Personal Blog" }
 ];
 function Index() {
-  return /* @__PURE__ */ jsxDEV3("div", { className: "" }, void 0, !1, {
+  return /* @__PURE__ */ jsxDEV5("div", { className: "mx-4 flex lg:mx-auto max-w-2xl mt-8 flex-col", children: [
+    /* @__PURE__ */ jsxDEV5(Header_default, {}, void 0, !1, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 16,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV5("h1", { className: "text-white mb-8 text-2xl font-medium tracking-tighter", children: "subhajit das" }, void 0, !1, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 17,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV5("p", { className: "text-white", children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique nisl vel maximus congue. Maecenas nisl turpis, bibendum sed molestie quis, iaculis et sapien. Phasellus maximus metus nec varius molestie. Vestibulum massa elit, sollicitudin sed ex nec, accumsan interdum diam. Cras eleifend, sapien vel tincidunt bibendum, neque nunc consequat ipsum, sit amet pulvinar libero eros non massa. Nam et tristique dolor. Praesent sit amet mauris at enim vestibulum venenatis. Donec sit amet egestas nibh. Nullam tempus dolor gravida, pretium quam ut, elementum neque. Etiam a ultricies urna. Etiam varius augue mauris, sed molestie nulla tempor sed. Maecenas euismod sapien in lacinia rutrum. Nam pellentesque diam sapien, sed cursus justo porttitor id. Curabitur vehicula vitae libero et euismod. Pellentesque sit amet elit quis ante congue fringilla in commodo augue. Quisque neque ante, euismod et mauris vel, congue imperdiet ipsum." }, void 0, !1, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 18,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, !0, {
     fileName: "app/routes/_index.tsx",
-    lineNumber: 12,
+    lineNumber: 15,
+    columnNumber: 5
+  }, this);
+}
+
+// app/routes/blogs.tsx
+var blogs_exports = {};
+__export(blogs_exports, {
+  default: () => Blogs
+});
+import { jsxDEV as jsxDEV6 } from "react/jsx-dev-runtime";
+function Blogs() {
+  return /* @__PURE__ */ jsxDEV6("div", { className: "mx-4 flex lg:mx-auto max-w-2xl mt-8 flex-col", children: [
+    /* @__PURE__ */ jsxDEV6(Header_default, {}, void 0, !1, {
+      fileName: "app/routes/blogs.tsx",
+      lineNumber: 6,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV6("div", { className: "text-white", children: " Working on it" }, void 0, !1, {
+      fileName: "app/routes/blogs.tsx",
+      lineNumber: 7,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/blogs.tsx",
+    lineNumber: 5,
     columnNumber: 5
   }, this);
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-MCJGIOZ4.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-IKYAR2PW.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-5MTCINCZ.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-BL5OYZCB.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-GLO24EHO.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "a3920650", hmr: { runtime: "/build/_shared/chunk-5MTCINCZ.js", timestamp: 1703442144303 }, url: "/build/manifest-A3920650.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-3XIPHFXO.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-OM4ETI2T.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-5MTCINCZ.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-VQV7IHC2.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-SNAI3IPD.js", imports: ["/build/_shared/chunk-ZIK73V7A.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/blogs": { id: "routes/blogs", parentId: "root", path: "blogs", index: void 0, caseSensitive: void 0, module: "/build/routes/blogs-OXVRLTMA.js", imports: ["/build/_shared/chunk-ZIK73V7A.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/projects": { id: "routes/projects", parentId: "root", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/projects-PGECVITH.js", imports: ["/build/_shared/chunk-ZIK73V7A.js"], hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "11a191b0", hmr: { runtime: "/build/_shared/chunk-5MTCINCZ.js", timestamp: 1703623612302 }, url: "/build/manifest-11A191B0.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "development", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1, v3_relativeSplatPath: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -228,6 +324,14 @@ var mode = "development", assetsBuildDirectory = "public/build", future = { v3_f
     caseSensitive: void 0,
     module: root_exports
   },
+  "routes/projects": {
+    id: "routes/projects",
+    parentId: "root",
+    path: "projects",
+    index: void 0,
+    caseSensitive: void 0,
+    module: projects_exports
+  },
   "routes/_index": {
     id: "routes/_index",
     parentId: "root",
@@ -235,6 +339,14 @@ var mode = "development", assetsBuildDirectory = "public/build", future = { v3_f
     index: !0,
     caseSensitive: void 0,
     module: index_exports
+  },
+  "routes/blogs": {
+    id: "routes/blogs",
+    parentId: "root",
+    path: "blogs",
+    index: void 0,
+    caseSensitive: void 0,
+    module: blogs_exports
   }
 };
 export {
