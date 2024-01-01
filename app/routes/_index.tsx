@@ -4,18 +4,44 @@ import Header from "~/components/Header";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Subhajit" },
+    { title: "Subhajit Das" },
     { name: "description", content: "My Personal Blog" },
   ];
 };
 
 export default function Index() {
-  const aboutme: string  = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique nisl vel maximus congue. Maecenas nisl turpis, bibendum sed molestie quis, iaculis et sapien. Phasellus maximus metus nec varius molestie. Vestibulum massa elit, sollicitudin sed ex nec, accumsan interdum diam. Cras eleifend, sapien vel tincidunt bibendum, neque nunc consequat ipsum, sit amet pulvinar libero eros non massa. Nam et tristique dolor. Praesent sit amet mauris at enim vestibulum venenatis. Donec sit amet egestas nibh. Nullam tempus dolor gravida, pretium quam ut, elementum neque. Etiam a ultricies urna. Etiam varius augue mauris, sed molestie nulla tempor sed. Maecenas euismod sapien in lacinia rutrum. Nam pellentesque diam sapien, sed cursus justo porttitor id. Curabitur vehicula vitae libero et euismod. Pellentesque sit amet elit quis ante congue fringilla in commodo augue. Quisque neque ante, euismod et mauris vel, congue imperdiet ipsum."
+  const aboutme: string =
+    "hey there, I am subhajit, a computer science student at boston university, and a computer engineer experienced in building computers and softwares.";
+  
+  const myInterest: string  = "i love to fix things that are broken (or break things that are already working). recently, i have been very interested in real-time data ingestion, and i am working on something related to that."
+
+  const workExp : string  = "i have worked at a start-up called Fyle and OpenText in the past as a software engineer."
   return (
     <div className="mx-4 flex lg:mx-auto max-w-2xl mt-8 flex-col">
       <Header />
-      <h1 className="text-white mb-8 text-2xl font-medium tracking-tighter">subhajit das</h1>
-      <p className="text-white">{aboutme}</p>
+      <h1 className="text-white mb-8 text-3xl font-medium tracking-tighter">
+        subhajit das
+      </h1>
+      <p className="text-white my-4">{aboutme}</p>
+      <p className="text-white my-4">{myInterest}</p>
+      <p className="text-white my-4">{workExp}</p> 
+      <ul className="text-white pt-4 flex flex-col gap-2 my-6 ml-6 list-disc">
+        <li className="mt-2">
+          <a className="underline hover:no-underline underline-offset-4 decoration-2 decoration-neutral-400" href="">
+            github
+          </a>
+        </li>
+        <li className="mt-2">
+          <a className="underline hover:no-underline underline-offset-4 decoration-2 decoration-neutral-400" href="">
+            twitter
+          </a>
+        </li>
+        <li className="mt-2">
+          <a className="underline hover:no-underline underline-offset-4 decoration-2 decoration-neutral-400" href="">
+            linkedin
+          </a>
+        </li>
+      </ul>
     </div>
   );
 }
