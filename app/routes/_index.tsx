@@ -27,17 +27,17 @@ export default function Index() {
       <p className="text-white my-4">{workExp}</p> 
       <ul className="text-white pt-4 flex flex-col gap-2 my-6 ml-6 list-disc">
         <li className="mt-2">
-          <a className="underline hover:no-underline underline-offset-4 decoration-2 decoration-neutral-400" href="">
+          <a className="underline hover:no-underline underline-offset-4 decoration-2 decoration-neutral-400" href="https://github.com/0verread">
             github
           </a>
         </li>
         <li className="mt-2">
-          <a className="underline hover:no-underline underline-offset-4 decoration-2 decoration-neutral-400" href="">
+          <a className="underline hover:no-underline underline-offset-4 decoration-2 decoration-neutral-400" href="https://twitter.com/heysubha">
             twitter
           </a>
         </li>
         <li className="mt-2">
-          <a className="underline hover:no-underline underline-offset-4 decoration-2 decoration-neutral-400" href="">
+          <a className="underline hover:no-underline underline-offset-4 decoration-2 decoration-neutral-400" href="https://www.linkedin.com/in/heysubha/">
             linkedin
           </a>
         </li>
