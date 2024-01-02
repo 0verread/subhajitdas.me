@@ -11,13 +11,13 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   const aboutme: string =
-    "hey there, I am subhajit, a computer science student at boston university, and a computer engineer experienced in building computers and softwares.";
+    "hey there, i am subhajit, a student at boston university, and a computer engineer experienced in building computers and softwares.";
   
   const myInterest: string  = "i love to fix things that are broken (or break things that are already working). recently, i have been very interested in real-time data ingestion, and i am working on something related to that."
 
   const workExp : string  = "i have worked at a start-up called Fyle and OpenText in the past as a software engineer."
   return (
-    <div className="mx-4 flex lg:mx-auto max-w-2xl mt-8 flex-col">
+    <div className="mx-4 flex lg:mx-auto max-w-2xl mt-8 flex-col font-mono">
       <Header />
       <h1 className="text-white mb-8 text-3xl font-medium tracking-tighter">
         subhajit das
