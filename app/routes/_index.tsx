@@ -11,7 +11,7 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   const aboutme: string =
-    "hey there, I am subhajit, a computer science student at boston university, and a computer engineer experienced in building computers and softwares.";
+    "hey there, i am subhajit, a student at boston university, and a computer engineer experienced in building computers and softwares.";
   
   const myInterest: string  = "i love to fix things that are broken (or break things that are already working). recently, i have been very interested in real-time data ingestion, and i am working on something related to that."
 
