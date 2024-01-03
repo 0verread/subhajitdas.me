@@ -17,7 +17,7 @@ export default function Index() {
 
   const workExp : string  = "i have worked at a start-up called Fyle and OpenText in the past as a software engineer."
   return (
-    <div className="mx-4 flex lg:mx-auto max-w-2xl mt-8 flex-col font-mono">
+    <div className="mx-4 flex lg:mx-auto max-w-2xl mt-8 flex-col">
       <Header />
       <h1 className="text-white mb-8 text-3xl font-medium tracking-tighter">
         subhajit das

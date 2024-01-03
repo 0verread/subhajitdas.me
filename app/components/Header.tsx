@@ -8,12 +8,12 @@ const Header = () => {
         >
           home
         </a>
-        <a
+        {/* <a
           className="flex text-white hover:underline decoration-neutral-400 decoration-2 underline-offset-4"
           href="/projects"
         >
           projects
-        </a>
+        </a> */}
         <a
           className="flex text-white hover:underline decoration-neutral-400 decoration-2 underline-offset-4"
           href="/blogs"

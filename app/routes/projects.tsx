@@ -9,7 +9,7 @@ export default function Projects(){
       <section className="mt-10">
         <ul className="list-disc ml-6">
           {allProjects.map(project =>
-            <li className="underline text-white">
+            <li className="underline text-white" key={project.name}>
               {project.name}
             </li>
           )}
