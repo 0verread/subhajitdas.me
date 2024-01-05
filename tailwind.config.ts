@@ -5,7 +5,9 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      mono: ["JetBrains Mono" ]
+      mono: ["JetBrains Mono" ],
+      nunito: ["Nunito"],
+      amaranth: ["Atkinson Hyperlegible", "sans-serif"]
     }
   },
   plugins: [],
