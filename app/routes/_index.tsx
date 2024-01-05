@@ -19,7 +19,7 @@ export default function Index() {
   return (
     <div className="mx-4 flex lg:mx-auto max-w-2xl mt-8 flex-col">
       <Header />
-      <h1 className="text-white mb-8 text-3xl font-medium tracking-tighter">
+      <h1 className="text-white mb-8 text-3xl tracking-tighter font-semibold">
         subhajit das
       </h1>
       <p className="text-white my-4">{aboutme}</p>
