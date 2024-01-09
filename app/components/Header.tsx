@@ -21,9 +21,9 @@ const Header = () => {
         </a>
                 <a
           className="flex text-white hover:underline hover:antialiased decoration-neutral-400 decoration-2 underline-offset-4"
-          href="/blogs"
+          href="/blog"
         >
-          blogs
+          blog
         </a>
       </nav>
     
