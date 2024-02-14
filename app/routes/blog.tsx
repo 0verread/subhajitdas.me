@@ -12,7 +12,7 @@ function postFormModule(mod : any){
   };
 }
 
-export async function loader(){
+export function loader(){
   return json([
     postFormModule(posta),
   ]);
