@@ -1,7 +1,23 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import {getAllBooks} from "../utils/bookshelf";
+
+const books = await getAllBooks();
+
 ---
 
 <Layout title="Jeet | bookshelf">
-  <div class="text-white">working on it</div>
+  <p class=" text-white mb-4">
+    <span>i like to read, in general. i have been reading biography and science books ever since i was a kid. often times, i read some blogs or newsletters.</span>
+  </p>
+  <span class="text-white">here is the list of all the books i've read so far.</span>
+  <div class="mt-4">
+    <ul class="list-disc ml-6">
+      {books.map(book => 
+        <li class="text-white">
+          <span class="underline">{book.name}</span> by <span class="font-bold">{book.author}</span>
+        </li>
+      )}
+    </ul>
+  </div>
 </Layout>
