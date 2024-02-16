@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import { CollectionEntry, getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
   const posts = await getCollection('blogs');
@@ -10,14 +11,14 @@ export async function getStaticPaths() {
   }));
 }
 
-type Props = CollectionEntry<'blog'>;
+type Props = CollectionEntry<'blogs'>;
 const post = Astro.props;
 const { Content } = await post.render();
 ---
 
 <Layout title="Jeet | Blog">
 <article class="text-white flex w-full flex-col prose prose-h1:text-zinc-200">
-  <h1 class="">{post.data.title}</h1>
+  <h1 class="">{post?.data?.title}</h1>
     <Content />
 </article>
 </Layout>
