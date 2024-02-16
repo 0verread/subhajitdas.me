@@ -1,0 +1,24 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const allBlogs = (await getCollection("blogs", ({data}) => {return data.isDraft !== true;}));
+---
+
+<Layout title="Jeet | Blogs">
+  <div class="mt-4">
+    {(allBlogs && allBlogs.length > 0) ?
+    <ul class="list-disc ml-6">
+       { allBlogs && allBlogs.map((blog) => (
+          <li class="text-white">
+            <a class="text-sm flex flex-row gap-2" href={`/blogs/${blog.slug}`}>
+              <span class="text-zinc-400">{blog.data.date.toDateString()}</span>
+              <span class="hover:underline underline-offset-4">{blog.data.title}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    : <div class="text-zinc-200">no blog as of now</div>}
+  </div>
+</Layout>

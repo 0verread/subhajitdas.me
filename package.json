@@ -1,5 +1,5 @@
 {
-  "name": "blog",
+  "name": "subhajitdas.me",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -11,9 +11,13 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.5.4",
+    "@astrojs/mdx": "^2.1.1",
     "@astrojs/tailwind": "^5.1.0",
     "astro": "^4.4.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10"
   }
 }
