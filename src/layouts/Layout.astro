@@ -15,10 +15,10 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<script defer src="https://cloud.umami.is/script.js" data-website-id="b29bf4a0-8c74-418d-8b4a-3ad94d52e985"></script>
+		<script data-website-id="b29bf4a0-8c74-418d-8b4a-3ad94d52e985" src="https://cloud.umami.is/script.js"></script>
 		<title>{title}</title>
 	</head>
-	<body class="bg-black mx-4 flex lg:mx-auto max-w-2xl mt-8 flex-col top-0 z-[-2] h-screen w-screen bg-[radial-gradient(#ffffff33_1px,black_1px)] bg-[size:28px_40px]">
+	<body class="bg-black mx-4 flex lg:mx-auto max-w-2xl mt-8 flex-col top-0 z-[-2] h-screen w-screen">
 		<Header />
 		<slot />
 	</body>
