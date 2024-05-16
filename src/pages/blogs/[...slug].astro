@@ -17,8 +17,8 @@ const { Content } = await post.render();
 ---
 
 <Layout title="Jeet | Blog">
-<article class="text-white flex w-full flex-col prose prose-h1:text-zinc-200">
-  <h1 class="">{post?.data?.title}</h1>
+<article class="text-white flex w-full flex-col prose prose-h2:text-zinc-200">
+  <h2 class="">{post?.data?.title}</h2>
     <Content />
 </article>
 </Layout>
