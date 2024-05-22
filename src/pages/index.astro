@@ -1,14 +1,5 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro'
-
-const aboutme: string =
-    "hey there, i am subhajit, a student at boston university, and a computer engineer experienced in building computers and softwares.";
-  
-  const myInterest: string  = "i love to fix things that are broken (or break things that are already working). recently, i have been very interested in real-time data ingestion, and i am working on something related to that."
-
-  const workExp : string  = "i have worked at a start-up called Fyle and OpenText in the past as a software engineer."
-
+import Layout from '../layouts/Layout.astro'; 
 ---
 
 <Layout title="Jeet">
@@ -16,9 +7,12 @@ const aboutme: string =
 		<h1 class="text-white mb-8 text-3xl tracking-tighter font-semibold">
 			subhajit das
 		</h1>
-		<p class="text-white my-4">{aboutme}</p>
-		<p class="text-white my-4">{myInterest}</p>
-		<p class="text-white my-4">{workExp}</p> 
+		<p class="text-white my-4">
+			hi there, i'm subhajit, but my friends call me jeet. i went to boston university to study cs, worked at a tiger global backed start-up called fyle where i mostly worked on api latency to make app faster and custom js library to build better and reusable ui components.
+		</p>
+		<p class="text-white my-4">
+			i like to work on the topics like machine learning (like everyone else right now), database, OS, and aws lambda. i like to build web apps except that css part, but i really prefer cli app.
+		</p>
 		<ul class="text-white pt-4 flex flex-col gap-2 my-6 ml-6 list-disc">
 			<li class="mt-2">
 				<a class="underline hover:no-underline underline-offset-4 decoration-2 decoration-neutral-400" href="https://github.com/0verread">
