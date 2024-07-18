@@ -14,8 +14,8 @@ const books = await getAllBooks();
   <div class="mt-4">
     <ul class="list-disc ml-6">
       {books.map(book => 
-        <li class="text-white">
-          <span class="underline">{book.name}</span> by <span class="font-bold">{book.author}</span>
+        <li class="text-white text-md">
+          <span class="text-red-700">{book.name}</span> <span class="text-xs"> - {book.author}</span>
         </li>
       )}
     </ul>
