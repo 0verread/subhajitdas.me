@@ -5,7 +5,7 @@ import { getCollection } from "astro:content";
 const allBlogs = (await getCollection("blogs", ({data}) => {return data.isDraft !== true;}));
 ---
 
-<Layout title="Jeet | Blogs">
+<Layout title="blogs">
   <div class="mt-4">
     {(allBlogs && allBlogs.length > 0) ?
     <ul class="list-disc ml-6">
@@ -19,6 +19,6 @@ const allBlogs = (await getCollection("blogs", ({data}) => {return data.isDraft 
         ))
       }
     </ul>
-    : <div class="text-zinc-200">no blog as of now</div>}
+    : <div class="text-zinc-200 font-ubuntu text-[15px]">no blog as of now</div>}
   </div>
 </Layout>
