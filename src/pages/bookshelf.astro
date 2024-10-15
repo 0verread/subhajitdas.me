@@ -7,15 +7,15 @@ const books = await getAllBooks();
 ---
 
 <Layout title="Jeet | bookshelf">
-  <p class="text-white mb-4">
-    <span>i like to read, in general. i have been reading biography and science books ever since i was a kid. often times, i read some blogs or newsletters.</span>
+  <p class="text-zinc-100 text-serif text-[16px] tracking-tight mb-4 ">
+    <span>I like to read, in general. I started with biographies and science books, and nowadays exploring psycological thrillar.</span>
   </p>
-  <span class="text-white">here is the list of all the books i've read so far.</span>
+  <span class="text-zinc-100 text-serif text-[16px] tracking-tight">here is the list of all the books I've read so far.</span>
   <div class="mt-4">
     <ul class="list-disc ml-6">
       {books.map(book => 
-        <li class="text-white text-md">
-          <span class="text-red-700">{book.name}</span> <span class="text-xs"> - {book.author}</span>
+        <li class="text-zinc-100 text-serif text-[15px] tracking-tight">
+          <span class="">{book.name}, </span><span class="text-zinc-400">{book.author}</span>
         </li>
       )}
     </ul>

@@ -1,4 +1,4 @@
-import { z, defineCollection } from "astro:content";
+import { z, defineCollection } from "astro:content"
 
 const blogCollection = defineCollection({
     type: 'content',
@@ -6,7 +6,7 @@ const blogCollection = defineCollection({
         title: z.string(),
         summary: z.string(),
         isDraft: z.boolean().default(false),
-        date: z.string().transform((str) => new Date(str)),
+        date: z.string(),
         image: z.string().optional(), //Image can be optional
     })
 });

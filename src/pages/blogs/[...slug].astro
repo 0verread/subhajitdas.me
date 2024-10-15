@@ -1,24 +1,24 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import type { CollectionEntry } from 'astro:content';
+import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blogs');
+  const posts = await getCollection("blogs");
   return posts.map((post) => ({
     params: { slug: post.slug },
     props: post,
   }));
 }
 
-type Props = CollectionEntry<'blogs'>;
+type Props = CollectionEntry<"blogs">;
 const post = Astro.props;
 const { Content } = await post.render();
 ---
 
 <Layout title="Jeet | Blog">
-<article class="text-white flex w-full flex-col prose prose-h2:text-zinc-200">
-  <h2 class="">{post?.data?.title}</h2>
+  <article class="text-serif text-[16px] tracking-tight flex w-full flex-col prose prose-h2:text-zinc-200">
+    <h2 class="">{post?.data?.title}</h2>
     <Content />
-</article>
+  </article>
 </Layout>
