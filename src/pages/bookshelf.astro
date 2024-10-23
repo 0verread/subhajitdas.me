@@ -3,12 +3,11 @@ import Layout from "../layouts/Layout.astro";
 import {getAllBooks} from "../utils/bookshelf";
 
 const books = await getAllBooks();
-
 ---
 
 <Layout title="bookshelf">
   <p class="text-zinc-100 font-ubuntu text-[16px] tracking-tight mb-4 ">
-    <span>I like to read, in general. I started with biographies and science books, and nowadays exploring psycological thrillar.</span>
+    <span>I like to read, in general. I started with biographies and science books, and nowadays exploring psychological thriller.</span>
   </p>
   <span class="text-zinc-100 font-ubuntu text-[16px] tracking-tight">here is the list of all the books I've read so far.</span>
   <div class="mt-4">

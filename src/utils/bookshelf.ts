@@ -1,5 +1,5 @@
 type Book = {
-  no: number
+  no: number,
   name: string,
   author: string,
 }
