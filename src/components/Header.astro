@@ -1,8 +1,15 @@
+---
+const currentPath = new URL(Astro.request.url).pathname.slice(1);
+
+---
+
 <nav
   class="relative flex flex-row justify-items-start space-x-4 items-start px-0 pb-0 mb-10 font-ubuntu text-[16px]"
 >
   <a
-    class="flex text-zinc-200 hover:text-zinc-400"
+    class={currentPath === ""
+      ? "flex text-zinc-400"
+      : "flex text-zinc-200 hover:text-zinc-400"}
     href="/"
   >
     home
@@ -16,21 +23,19 @@
   </a> */
   }
   <a
-    class="flex text-zinc-200 hover:hover:text-zinc-400"
+    class={currentPath === "bookshelf"
+      ? "flex text-zinc-400"
+      : "flex text-zinc-200 hover:text-zinc-400"}
     href="/bookshelf"
   >
     bookshelf
   </a>
   <a
-    class="flex text-zinc-200 hover:hover:text-zinc-400"
+    class={currentPath === "blogs"
+      ? "flex text-zinc-400"
+      : "flex text-zinc-200 hover:text-zinc-400"}
     href="/blogs"
   >
     blogs
   </a>
-  <!-- <a
-  class="flex text-white hover:underline hover:antialiased decoration-neutral-400 decoration-2 underline-offset-4"
-  href="/ai"
->
-  ai
-</a> -->
 </nav>
