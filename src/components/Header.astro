@@ -1,6 +1,5 @@
 ---
 const currentPath = new URL(Astro.request.url).pathname.slice(1);
-
 ---
 
 <nav
@@ -22,8 +21,10 @@ const currentPath = new URL(Astro.request.url).pathname.slice(1);
     projects
   </a> */
   }
+
+  <!-- hack: on vercel prod, currentPath has tailing slash. e.g. /blog -> /blog/ see more: https://github.com/withastro/astro/issues/5248 -->
   <a
-    class={currentPath === "bookshelf"
+    class={currentPath === "bookshelf/"
       ? "flex text-zinc-400"
       : "flex text-zinc-200 hover:text-zinc-400"}
     href="/bookshelf"
@@ -31,7 +32,7 @@ const currentPath = new URL(Astro.request.url).pathname.slice(1);
     bookshelf
   </a>
   <a
-    class={currentPath === "blogs"
+    class={currentPath === "blogs/"
       ? "flex text-zinc-400"
       : "flex text-zinc-200 hover:text-zinc-400"}
     href="/blogs"
