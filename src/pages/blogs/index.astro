@@ -10,7 +10,7 @@ const allBlogs = (await getCollection("blogs", ({data}) => {return data.isDraft 
     {(allBlogs && allBlogs.length > 0) ?
     <ul class="list-disc ml-6">
        { allBlogs && allBlogs.map((blog) => (
-          <li class="text-zinc-100 text-serif text-[16px] tracking-tight">
+          <li class="text-zinc-100 font-consolas text-[15px] tracking-tight">
             <a class="text-[16px] flex flex-row gap-2" href={`/blogs/${blog.slug}`}>
               <span class="text-zinc-400">{blog.data.date}</span>
               <span class="hover:underline underline-offset-4">{blog.data.title}</span>
@@ -19,6 +19,6 @@ const allBlogs = (await getCollection("blogs", ({data}) => {return data.isDraft 
         ))
       }
     </ul>
-    : <div class="text-zinc-200 font-ubuntu text-[16px]">no blog as of now</div>}
+    : <div class="text-zinc-200 font-consolas text-[15px]">no blog as of now</div>}
   </div>
 </Layout>

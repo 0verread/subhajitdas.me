@@ -9,6 +9,7 @@ export default {
 				sans: ['Inter', ...defaultTheme.fontFamily.sans],
 				ubuntu: ['Ubuntu', ...defaultTheme.fontFamily.serif],
 				mono: ['JetBrains Mono', ...defaultTheme.fontFamily.mono],
+				consolas: ['Consolas', ...defaultTheme.fontFamily.mono],
 			}
 		},
 	},
